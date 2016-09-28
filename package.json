@@ -1,0 +1,26 @@
+{
+  "name": "train-sass-lang",
+  "version": "1.0.0",
+  "description": "Personal training to DST colleague",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamgoangle/train-sass-lang.git"
+  },
+  "keywords": [
+    "sass"
+  ],
+  "author": "Teerapong Singthong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamgoangle/train-sass-lang/issues"
+  },
+  "homepage": "https://github.com/iamgoangle/train-sass-lang#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  }
+}
