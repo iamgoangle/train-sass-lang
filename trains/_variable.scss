@@ -1,0 +1,18 @@
+/*
+    The most straightforward way to use SassScript is to use variables.
+    Variables begin with dollar signs, and are set like CSS properties
+*/
+
+/* color presets */
+$primary-color: #75142B;
+$heading-color: #D4A46A;
+$footer-color: #554E00;
+
+/* font collection */
+$primary-font: Helvetica, sans-serif;
+
+/* image collection */
+$background-home = '/images/bg-home.jpg';
+
+/* width collection */
+$standard-box-width: 50px;

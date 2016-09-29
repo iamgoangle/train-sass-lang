@@ -1,0 +1,50 @@
+/*
+    Sass allows CSS rules to be nested within one another.
+    The inner rule then only applies within the outer rule’s selector
+*/
+
+body {
+    ui {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    a {
+        display: block;
+        padding: 10px 5px;
+        text-decoration: none;
+    }
+}
+
+
+#main {
+    p {
+        color: rgb(53, 207, 204);
+        width: 90%;
+    }
+}
+
+/*
+    Nested property
+*/
+
+div {
+    .ninja {
+        font: {
+            family: sans-serif, fantasy;
+            weight: bold;
+        }
+    }
+}
+
+/*
+    Reference parent selector
+*/
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    $:hover {
+        background-color: rgb(70, 217, 151);
+    }
+}

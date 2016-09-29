@@ -1,0 +1,19 @@
+.messsage {
+    border: 1px solid rgb(17, 2, 11);
+    padding: 10px;
+}
+
+.error {
+    @extend .messsage;
+    color: rgb(242, 58, 113);
+}
+
+.success {
+    @extend .message;
+    color: rgb(166, 237, 117);
+}
+
+.warning {
+    @extend .message;
+    color: rgb(227, 238, 91);
+}

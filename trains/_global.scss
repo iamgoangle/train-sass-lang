@@ -1,0 +1,23 @@
+$text-color: blue;
+
+.error {
+  $text-color: red;
+  color: $text-color;
+  $text-color: green !global;
+}
+
+.normal-text {
+  color: $text-color;
+}
+
+/*
+
+.error {
+  color: red;
+}
+
+.normal-text {
+  color: green;
+}
+
+*/
