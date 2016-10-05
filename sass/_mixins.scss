@@ -1,0 +1,38 @@
+/*
+    == normal default color
+    == if there is no parameter passed, the default is blue
+*/
+$default-text-color: red;
+$default-text-color: yellow !default;
+@mixin text-color ($color: $default-text-color) {
+    color: $color;
+}
+
+/*
+    code cleaner solution
+
+    Another trick that can be quite useful is to declare a variable beforehand
+    and use that as the default value for the mixin
+
+    == http://thesassway.com/intermediate/leveraging-sass-mixins-for-cleaner-code
+    == https://anotheruiguy.gitbooks.io/sassintherealworld_book-i/content/handy-tools/default-flag.html
+*/
+@mixin border-radius ($radius) {
+    $radius: 5px;
+    // $radius: 5px !default
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin unified-message ($flag) {
+    @include border-radius (2px);
+    @if $flag == true {
+        color: $success-message;
+    } @else if $flag == false {
+        color: $error-message;
+    } @else {
+        color: yellow;
+    }
+}

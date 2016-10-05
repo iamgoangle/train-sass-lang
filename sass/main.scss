@@ -1,0 +1,96 @@
+@import 'variables';
+@import 'mixins';
+
+// nesting
+body {
+    div {
+        margin: 0px;
+        padding: 0px;
+    }
+}
+
+// nesting property
+.funky {
+    font: {
+        family: fantasy;
+        size: 30em;
+        weight: bold;
+    }
+}
+
+// uses mixin
+.main-body {
+    @include text-color();
+}
+
+
+// reference to parent selector
+a {
+    &:hover {
+        color: $hyperlink-hover-color;
+        text-decoration: none;
+    }
+}
+
+#main {
+    color: black;
+    a {
+        font-weight: bold;
+        &:hover {
+            color: red;
+        }
+    }
+}
+
+// operation
+.box_devide {
+    width: $box-sizing / 2px;
+}
+
+// iterpolation
+body {
+    .#{$my-selector} {
+        border: 1px solid lack;
+    }
+}
+
+// extend
+.error {
+    color: $error-message;
+}
+
+.success {
+    color: $success-message;
+}
+
+.valid-message {
+    @extend .success;
+}
+
+// control directive and expression
+// if else..if else
+p {
+    @if 1+1 == 2 {
+        border: 1px solid black;
+    }
+}
+
+span {
+    &.unified-success {
+        @include unified-message(true);
+    }
+}
+
+// @for
+@for $i from 1 through 5 {
+    .margin-#{$i * 5} {
+        margin: $i * 5;
+    }
+}
+
+// @each
+@each $brand in $my-selectors-list {
+    .#{$brand}-icon {
+        bacground-image: url('/images/brands/#{$brand}.png');
+    }
+}

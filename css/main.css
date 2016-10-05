@@ -1,0 +1,109 @@
+/* example colors preset */
+/* example font collection */
+/* default */
+/* width */
+/* selector string */
+/*
+    == normal default color
+    == if there is no parameter passed, the default is blue
+*/
+/*
+    code cleaner solution
+
+    Another trick that can be quite useful is to declare a variable beforehand
+    and use that as the default value for the mixin
+
+    == http://thesassway.com/intermediate/leveraging-sass-mixins-for-cleaner-code
+    == https://anotheruiguy.gitbooks.io/sassintherealworld_book-i/content/handy-tools/default-flag.html
+*/
+body div {
+  margin: 0px;
+  padding: 0px;
+}
+
+.funky {
+  font-family: fantasy;
+  font-size: 30em;
+  font-weight: bold;
+}
+
+.main-body {
+  color: red;
+}
+
+a:hover {
+  color: #b7e420;
+  text-decoration: none;
+}
+
+#main {
+  color: black;
+}
+
+#main a {
+  font-weight: bold;
+}
+
+#main a:hover {
+  color: red;
+}
+
+.box_devide {
+  width: 250;
+}
+
+body .shopping {
+  border: 1px solid lack;
+}
+
+.error {
+  color: red;
+}
+
+.success, .valid-message {
+  color: green;
+}
+
+p {
+  border: 1px solid black;
+}
+
+span.unified-success {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  color: green;
+}
+
+.margin-5 {
+  margin: 5;
+}
+
+.margin-10 {
+  margin: 10;
+}
+
+.margin-15 {
+  margin: 15;
+}
+
+.margin-20 {
+  margin: 20;
+}
+
+.margin-25 {
+  margin: 25;
+}
+
+.nike-icon {
+  bacground-image: url("/images/brands/nike.png");
+}
+
+.puma-icon {
+  bacground-image: url("/images/brands/puma.png");
+}
+
+.addidas-icon {
+  bacground-image: url("/images/brands/addidas.png");
+}

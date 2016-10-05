@@ -1,0 +1,24 @@
+/* example colors preset */
+$primary-color: #3a9faa;
+$secondary-color: #42c47d;
+$hyperlink-hover-color: #b7e420;
+
+$main-bg-color: #edf4f0;
+$footer-bg-color: #87a393;
+
+$error-message: red;
+$success-message: green;
+
+/* example font collection */
+$main-font: 'Raleway', sans-serif;
+
+/* default */
+$default-radius: 5px !default;
+
+/* width */
+$box-sizing: 500px;
+
+
+/* selector string */
+$my-selector: "shopping";
+$my-selectors-list: (nike, puma, addidas);
